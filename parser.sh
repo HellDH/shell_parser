@@ -13,4 +13,3 @@ echo 'Топ HTTP методов, отправленных в запросах �
 echo
         sed -E -e "/${start}/,/${end}/ !d" $1 | rg -oe $mthregex | sort | uniq -c | sort -nr
 echo
-echo ''
